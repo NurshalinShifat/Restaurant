@@ -1,0 +1,459 @@
+/*Global CSS*/
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+p {
+	margin-bottom: 0;
+}
+
+
+/*Header Section CSS*/
+
+header {
+	background: url(../images/navbar-bg.png);
+	background-position: center;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+.navbar {
+	padding: 20px 0;
+}
+
+.navbar .nav-item {
+	margin: 0 10px;
+}
+
+.navbar .nav-item .nav-link {
+	color: #fff;
+    padding: 8px 20px;
+	position: relative;
+}
+
+.navbar .nav-item .nav-link::after {
+	content: "";
+	position: absolute;
+	background: #fff;
+	width: 0;
+	height: 2px;
+	left: 0;
+	bottom: 0;
+	transition: 0.3s linear;
+}
+
+.navbar .nav-item .nav-link::before {
+	content: "";
+	position: absolute;
+	background: #fff;
+	width: 0;
+	height: 2px;
+	right: 0;
+	bottom: 0;
+    transition: 0.3s linear;
+}
+
+.navbar .nav-item .nav-link:hover::after {
+	width: 48%;
+}
+
+.navbar .nav-item .nav-link:hover::before {
+	width: 48%;
+}  
+
+.navbar .nav-item.active .nav-link {
+	color: #fff;
+}
+
+.navbar .nav-item.active .nav-link::after {
+	content: "";
+	position: absolute;
+	background: #fff;
+	width: 48%;
+	height: 2px;
+	left: 0;
+	bottom: 0;
+	transition: 0.4s linear;
+}
+
+.navbar .nav-item.active .nav-link::before {
+	content: "";
+	position: absolute;
+	background: #fff;
+	width: 48%;
+	height: 2px;
+	right: 0;
+	bottom: 0;
+    transition: 0.4s linear;
+}
+
+.navbar .nav-item .nav-link:hover {
+	color: #fff;
+}
+
+
+/*Hero area CSS*/
+
+.hero-area {
+	text-align: center;
+	color: #fff;
+	margin-top: 100px;
+}
+
+.hero-area h1 {
+	font-family: 'Yeseva One', cursive;
+	font-size: 75px;
+	padding: 0 8%;
+    margin-bottom: 30px;
+}
+
+.hero-area .btn-cta {
+    margin-top: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 7px 40px;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+.hero-area .btn-cta:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+/*Cook section CSS*/
+
+.cook {}
+
+.cook .box {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.cook .box h3 {
+    color: #cc9900;
+    font-size: 36px;
+    font-family: 'Yeseva One', cursive;
+}
+
+.cook .box img {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.cook .box p {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.cook .dish {
+	 margin-top: 80px;
+}
+
+.cook .dish img {}
+
+
+/*Ingredients section CSS*/
+
+.ingredients {
+    background: url(../images/ingredients-bg.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.ingredients .box {}
+
+.ingredients .spices {
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.67);
+    padding: 100px 80px;
+    text-align: center;
+}
+
+.ingredients .spices h3 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-family: 'Yeseva One', cursive;
+}
+
+.ingredients .spices img {}
+
+.ingredients .spices p {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*Menu section CSS*/
+
+.menu {
+    background-image: url(../images/menu-bg.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 80px 0px;
+}
+
+.menu .menu-item {}
+
+.menu .menu-item h3 {
+    color: #cc9900;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Yeseva One', cursive;
+
+}
+
+.menu .menu-item img {
+	margin: 0 auto;
+	margin-bottom: 20px;
+	display: block;
+}
+
+.menu .menu-item h5 {
+    color: #cc9900;
+    display: inline-block;
+}
+
+.menu .menu-item span {
+    color: #cc9900;
+    float: right;
+}
+
+.menu .menu-item p {
+	border-top: 1px solid #cc9900;
+	font-size: 16px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+
+/*Review section CSS*/
+
+.review {
+    background-image: url(../images/quote-bg.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+}
+
+.review .review-box {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.67);
+    padding: 50px 40px;
+    margin: 70px 0px;
+}
+
+.review .review-box h3 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-family: 'Yeseva One', cursive;
+}
+
+.review .review-box img {
+    margin-bottom: 35px;
+}
+
+.review .review-box p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.7;
+    font-family: 'Yeseva One', cursive;
+}
+
+
+/*Booking section CSS*/
+
+.booking {
+	padding: 100px 0px;
+	background-image: url(../images/booking-bg.png);
+    min-height: 100vh;
+}
+
+.booking .box {}
+.booking .box img {}
+
+.booking .booking-form {
+    text-align: center;
+}
+
+.booking .booking-form h3 {
+    color: #cc9900;
+    font-size: 36px;
+    font-family: 'Yeseva One', cursive;
+    margin-bottom: 15px;
+}
+
+.booking .booking-form img {
+	margin-bottom: 25px;
+}
+
+.booking .booking-form p {
+    color: #000;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.booking .booking-form h5 {
+    display: inline-block;
+    color: #cc9900;
+    font-family: 'Yeseva One', cursive;
+    font-size: 16px;
+}
+
+.booking .booking-form .btn-custom {
+	margin-top: 30px;
+}
+
+.booking .booking-form .btn-custom {
+	background: #cc9900;
+	border-color: #cc9900;
+	padding: 7px 50px;
+	border-radius: 3px;
+}
+
+.booking .booking-form .btn-custom:hover {
+	background: #B7EA26;
+	border-color: #B7EA26;
+}
+
+
+/*Footer section CSS*/
+
+footer {
+    background-color: #000;
+    padding: 40px 0px;
+}
+
+footer .box {
+    color: #fff;
+    text-align: center;
+}
+
+footer .box h5 {
+    font-size: 21px;
+    margin-bottom: 15px;
+    font-family: 'Yeseva One', cursive;
+}
+
+footer .box img {
+    margin-bottom: 20px;
+}
+
+footer .box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+footer .box .nav-item {}
+
+footer .box .nav-item .nav-link {
+	color: #fff;
+}
+
+footer .box .nav-item:hover {
+	background: #cc9900;
+}
+
+footer .box .nav-item:hover .nav-link {
+	color: #fff;
+}
+
+
+/*Responsive CSS*/
+
+@media (min-width: 0px) and (max-width: 575px) {
+     
+     .navbar .nav-item .nav-link {
+        padding: 8px 0;
+     }
+
+     .navbar .nav-item .nav-link:hover::after {
+        width: 30%;
+     }
+
+     .navbar .nav-item .nav-link:hover::before {
+        content: unset;
+     }
+
+     .hero-area {
+        margin-top: 100px;
+     }
+
+     .hero-area h1 {
+        font-size: 42px;
+     }
+
+     .booking .box {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+     footer .box p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+     
+     .navbar .nav-item .nav-link {
+        padding: 8px 0;
+     }
+
+     .navbar .nav-item .nav-link:hover::after {
+        width: 30%;
+     }
+
+     .navbar .nav-item .nav-link:hover::before {
+        content: unset;
+     }
+
+     .hero-area {
+        margin-top: 100px;
+     }
+
+     .hero-area h1 {
+        font-size: 42px;
+     }
+
+     .booking .box {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+     footer .box p {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+
+
+
